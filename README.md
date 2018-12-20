@@ -19,6 +19,9 @@ IMG Project
 press Ctrl+Shift+P
 type "shell" in the displayed text box
 select default shell -> choose you shell window
+
+module
+Angular 7 Snippets - TypeScript, Html, Angular Material, ngRx
 <br>
 **Versioning** : Git
 <br>
