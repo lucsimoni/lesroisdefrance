@@ -17,6 +17,9 @@ ng generate module shared
 ng generate component shared/UI/top-bar
 
 
+
+
+
 ajouter une librairie à notre projet
 npm install --save nomDuPaquet
 
@@ -36,3 +39,6 @@ faits marquant
 surnom
 
 herse dans liste roi
+
+
+Header mobile lys qui tourne bas et haut
