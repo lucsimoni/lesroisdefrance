@@ -8,6 +8,7 @@ const routes: Routes = [
   { path: '', component: HomeComponent},
   { path: 'a-propos', component: AboutComponent},
   { path: 'page-introuvable', component: NotFoundComponent},
+  { path: 'periode', loadChildren: './periods/periods.module#PeriodsModule'},
   { path: '**', redirectTo: '/page-introuvable'},
 ];
 

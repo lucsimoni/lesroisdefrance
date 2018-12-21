@@ -1,12 +1,13 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { HautMoyenAgeComponent } from './pages/haut-moyen-age/haut-moyen-age.component';
 
 const routes: Routes = [
-
+  { path: '', component: HautMoyenAgeComponent},
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
-export class AppRoutingModule { }
+export class PeriodsRoutingModule { }

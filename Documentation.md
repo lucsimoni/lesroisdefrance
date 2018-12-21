@@ -43,3 +43,6 @@ herse dans liste roi
 
 
 Header mobile lys qui tourne bas et haut
+
+
+quand routing children pas besoin de déclarer le module dans app.module
