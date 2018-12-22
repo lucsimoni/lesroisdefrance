@@ -13,6 +13,9 @@ import { PeriodCardComponent } from './components/period-card/period-card.compon
     CommonModule,
     PeriodsRoutingModule,
     SharedModule
+  ],
+  exports: [
+    PeriodCardComponent
   ]
 })
 export class PeriodsModule { }

@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { SharedModule } from './shared/shared.module';
-// import { PeriodsModule } from './periods/periods.module';
+import { PeriodsModule } from './periods/periods.module';
 
 import { AppComponent } from './app.component';
 import { NotFoundComponent } from './not-found/not-found.component';
@@ -21,7 +21,7 @@ import { AboutComponent } from './about/about.component';
     BrowserModule,
     AppRoutingModule,
     SharedModule,
-    // PeriodsModule
+    PeriodsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

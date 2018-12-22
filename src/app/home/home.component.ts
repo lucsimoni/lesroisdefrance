@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { PeriodService } from 'src/app/core/services/period/period.service';
+import { Period } from 'src/app/core/models/Period.model';
 
 @Component({
   selector: 'app-home',
@@ -7,7 +9,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  periods : Period[] = [];
+
+  constructor(private periodService: PeriodService) {
+    this.periods = this.periodService.getAll();
+  }
 
   ngOnInit() {
   }
