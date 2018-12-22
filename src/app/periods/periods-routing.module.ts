@@ -6,6 +6,7 @@ import { PeriodComponent } from './pages/period/period.component';
 const routes: Routes = [
   { path: 'haut-moyen-age', component: HautMoyenAgeComponent},
   { path: 'test', component: PeriodComponent}
+  // TODO si param vide "" renvoi vers notfound
 ];
 
 @NgModule({
