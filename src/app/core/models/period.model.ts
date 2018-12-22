@@ -1,6 +1,6 @@
 export interface Period {
     id: string,
     title: string,
-    date: string,
+    date: number,
     imageUrl: string
 }
