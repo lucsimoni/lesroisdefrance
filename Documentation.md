@@ -17,7 +17,8 @@ ng generate module shared
 ng generate component shared/UI/top-bar
 
 
-
+générer un module avec un fichier de routes
+ng generate module SomeModule --routing
 
 
 ajouter une librairie à notre projet
@@ -42,3 +43,6 @@ herse dans liste roi
 
 
 Header mobile lys qui tourne bas et haut
+
+
+quand routing children pas besoin de déclarer le module dans app.module
