@@ -3,7 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { HautMoyenAgeComponent } from './pages/haut-moyen-age/haut-moyen-age.component';
 
 const routes: Routes = [
-  { path: '', component: HautMoyenAgeComponent},
+  { path: 'haut-moyen-age', component: HautMoyenAgeComponent},
 ];
 
 @NgModule({
