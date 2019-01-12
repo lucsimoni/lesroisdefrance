@@ -30,6 +30,6 @@ export class PeriodService {
     if(start - end > 0) throw Error("End must be greater than start");
     this.periods = this.periods.splice(start, end - start );
     return this.periods;
-}
+  }
 
 }
