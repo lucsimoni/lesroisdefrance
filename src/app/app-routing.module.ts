@@ -9,7 +9,7 @@ const routes: Routes = [
   { path: 'a-propos', component: AboutComponent},
   { path: 'page-introuvable', component: NotFoundComponent},
   //On ne déclare pas le module périod, il est déclaré dans le loadchildren
-  { path: 'period', loadChildren: './period/period.module#PeriodModule'},
+  { path: 'periode', loadChildren: './period/period.module#PeriodModule'},
   { path: '**', redirectTo: '/page-introuvable'},
 ];
 
