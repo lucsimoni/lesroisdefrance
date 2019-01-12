@@ -3,7 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { PeriodPageComponent } from './components/period-page/period-page.component';
 
 const routes: Routes = [
-  { path: '', component: PeriodPageComponent},
+  { path: ':id', component: PeriodPageComponent},
 ];
 
 @NgModule({
