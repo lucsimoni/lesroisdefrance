@@ -5,6 +5,7 @@ import { PeriodGuard } from '../core/guards/period.guard';
 
 const routes: Routes = [
   { path: ':id', component: PeriodPageComponent, canActivate: [PeriodGuard]},
+  { path: '**', redirectTo: '/page-introuvable'},
 ];
 
 @NgModule({

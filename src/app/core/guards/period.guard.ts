@@ -10,7 +10,7 @@ import { PERIODS } from '../data/period';
 })
 export class PeriodGuard implements CanActivate {
 
-  constructor(private router:Router) {}
+  constructor(private router:Router,private periodServ:PeriodService) {}
 
   canActivate(
     next: ActivatedRouteSnapshot,
@@ -18,18 +18,10 @@ export class PeriodGuard implements CanActivate {
 
       //Récupère l'id de la période dans l'url
       var periodId = next.params.id;
-      var periodFound:Boolean = false;
       //On check si l'id period existe
-      // this.periodService.exists();
-      // console.log(periodExists);
+      var periodFound:Boolean = this.periodServ.exists(periodId);
 
-      //A remplacer par le service
-      PERIODS.forEach(element => {
-        if(periodId === element.id) {
-          periodFound = true;
-        }
-      });
-
+      //On redirige si le paramètre saisi ne correspond pas
       if(!periodFound) {
         this.router.navigate(['page-introuvable']);
         return false;
