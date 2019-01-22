@@ -15,7 +15,7 @@ export class PeriodPageComponent implements OnInit {
   constructor(
     private route:ActivatedRoute,
     private periodServ:PeriodService
-    ) {}
+  ) {}
 
   ngOnInit() {
     let periodId:string = this.route.snapshot.paramMap.get('id');
