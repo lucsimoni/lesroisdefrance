@@ -3,7 +3,6 @@ import { CanActivate, ActivatedRouteSnapshot, RouterStateSnapshot, Router } from
 import { Observable } from 'rxjs';
 
 import { PeriodService } from '../services/period/period.service';
-import { PERIODS } from '../data/period';
 
 @Injectable({
   providedIn: 'root'
