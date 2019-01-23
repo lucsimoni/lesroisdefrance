@@ -32,7 +32,7 @@ export class PeriodService {
     return this.periods;
   }
 
-  exists(periodId:string) {
+  exists(periodId:string):boolean {
     var periodFound:boolean = false;
     this.getAll().forEach(element => {
       if(periodId === element.id) {
