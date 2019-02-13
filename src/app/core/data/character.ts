@@ -5,15 +5,15 @@ export const CHARACTERS: Character[] = [{
     title: "Clovis",
     nickname: "unknown",
     period:"haut-moyen-age",
+    imageUrl: 'assets/images/character-cards/clovis.jpg',
     dateStart: new Date().setFullYear(1987,1,7),
     dateEnd: new Date().setFullYear(1987,1,7),
-    imageUrl: 'assets/images/period-cards/medieval-haut.png',
   }, {
     id:"pepin-le-bref",
     title: 'Pépin le Bref',
     nickname: "unknown",
     period:"haut-moyen-age",
-    imageUrl: 'assets/images/period-cards/medieval-classique.png',
+    imageUrl: 'assets/images/character-cards/pepin.jpg',
     dateStart: new Date().setFullYear(1987,1,7),
     dateEnd: new Date().setFullYear(1987,1,7),
   }, {
@@ -21,7 +21,7 @@ export const CHARACTERS: Character[] = [{
     title: 'Charlemagne',
     nickname: "unknown",
     period:"haut-moyen-age",
-    imageUrl: 'assets/images/period-cards/medieval-bas.png',
+    imageUrl: 'assets/images/character-cards/charlemagne.jpg',
     dateStart: new Date().setFullYear(1987,1,7),
     dateEnd: new Date().setFullYear(1987,1,7),
    }, {
@@ -29,7 +29,7 @@ export const CHARACTERS: Character[] = [{
     title: 'Louis IX',
     nickname: "unknown",
     period:"moyen-age-classique",
-    imageUrl: 'assets/images/period-cards/medieval-bas.png',
+    imageUrl: 'assets/images/character-cards/louis-ix.jpg',
     dateStart: new Date().setFullYear(1987,1,7),
     dateEnd: new Date().setFullYear(1987,1,7),
   }];
