@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Period } from 'src/app/core/models/period.model';
 import { PeriodService } from 'src/app/core/services/period/period.service';
+import { Character } from 'src/app/core/models/character.model';
 
 @Component({
   selector: 'app-period-page',
@@ -11,6 +12,7 @@ import { PeriodService } from 'src/app/core/services/period/period.service';
 export class PeriodPageComponent implements OnInit {
 
   period : Period;
+  characters : Character [] = [];
 
   constructor(
     private route:ActivatedRoute,
@@ -22,6 +24,9 @@ export class PeriodPageComponent implements OnInit {
     this.period = this.periodServ.getOne(periodId);
     console.log(periodId);
     console.log(this.period);
+
+    // this.characters = 
+
   }
 
 }
