@@ -2,8 +2,8 @@
   <div class="card mb-2">
     <img class="card-img-top" src="{{period.imageUrl}}" alt="Card image cap">
     <div class="card-body">
-      <h5 class="card-title">{{period.title}}</h5>
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <h5 class="period-card-title">{{period.title}}</h5>
+      <p class="period-card-date">{{period.dateStart | date : "y"}} - {{period.dateEnd | date : "y"}}</p>
     </div>
   </div>
 </a>

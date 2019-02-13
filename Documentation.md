@@ -30,7 +30,11 @@ http-server
 
 Mettre la dynastie en pastille
 
+ng new precisez le style
 
+git clone
+npm install
+ng serve
 
 Herse
 

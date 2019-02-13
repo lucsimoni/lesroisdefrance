@@ -21,4 +21,11 @@ export const CHARACTERS: Character[] = [{
     imageUrl: 'assets/images/period-cards/medieval-bas.png',
     dateStart: new Date().setFullYear(1987,1,7),
     dateEnd: new Date().setFullYear(1987,1,7),
+   }, {
+    id:"louis-ix",
+    title: 'Louis IX',
+    period:"moyen-age-classique",
+    imageUrl: 'assets/images/period-cards/medieval-bas.png',
+    dateStart: new Date().setFullYear(1987,1,7),
+    dateEnd: new Date().setFullYear(1987,1,7),
   }];
