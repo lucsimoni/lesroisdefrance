@@ -16,8 +16,14 @@ export class CharacterService {
     return {...this.characters.find((v) => v.id === id)};
   }
 
-  getAllFromPeriod() {
-    
+  getCharactersFromPeriod(periodId:string) {
+    let results = [];
+    this.characters.forEach(character => {
+      if(character.period === periodId) {
+        results.push(character);
+      }
+    });
+    return results;
   }
 
 }

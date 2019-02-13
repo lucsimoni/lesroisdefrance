@@ -3,6 +3,7 @@ import { ActivatedRoute } from '@angular/router';
 import { Period } from 'src/app/core/models/period.model';
 import { PeriodService } from 'src/app/core/services/period/period.service';
 import { Character } from 'src/app/core/models/character.model';
+import { CharacterService } from 'src/app/core/services/character/character.service';
 
 @Component({
   selector: 'app-period-page',
@@ -16,14 +17,17 @@ export class PeriodPageComponent implements OnInit {
 
   constructor(
     private route:ActivatedRoute,
-    private periodServ:PeriodService
+    private periodService:PeriodService,
+    private characterService:CharacterService
   ) {}
 
   ngOnInit() {
     let periodId:string = this.route.snapshot.paramMap.get('id');
-    this.period = this.periodServ.getOne(periodId);
-    console.log(periodId);
-    console.log(this.period);
+    this.period = this.periodService.getOne(periodId);
+    this.characters = this.characterService.getCharactersFromPeriod(periodId);
+    console.log("period ID",periodId);
+    console.log("period",this.period);
+    console.log("characters", this.characters);
 
     // this.characters = 
 
