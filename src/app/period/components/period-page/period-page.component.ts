@@ -25,12 +25,6 @@ export class PeriodPageComponent implements OnInit {
     let periodId:string = this.route.snapshot.paramMap.get('id');
     this.period = this.periodService.getOne(periodId);
     this.characters = this.characterService.getCharactersFromPeriod(periodId);
-    console.log("period ID",periodId);
-    console.log("period",this.period);
-    console.log("characters", this.characters);
-
-    // this.characters = 
-
   }
 
 }

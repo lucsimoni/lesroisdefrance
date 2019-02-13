@@ -2,6 +2,12 @@
   Photo banner
   <h1>{{period.title}}</h1>
 
-  <p *ngFor="let character of characters">{{character.title}}</p>
+  <div class="row">
+    <div class="col-md-3" *ngFor="let character of characters">
+      <app-character-card [character]="character" ></app-character-card>
+    </div>
+  </div>
+
+  
 
 </div>
