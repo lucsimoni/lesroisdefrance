@@ -93,3 +93,5 @@ angular.js ?
 fontawesome
 cssanimate
 ```
+
+rendre traduisible

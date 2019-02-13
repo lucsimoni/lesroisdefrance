@@ -1,6 +1,7 @@
 export interface Character {
     id: string,
     title: string,
+    nickname: string,
     period: string,
     dateStart: number,
     dateEnd: number,
