@@ -14,4 +14,8 @@ export interface Character {
     //Map apogee
     //Map fin
     //Resume
+    //debutregne
+    //datenais
+    //datemort
+    //galeries image
 }

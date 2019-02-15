@@ -1,0 +1,12 @@
+a.character-card {
+    text-decoration: none;
+    color: #343a40;
+    &:hover .card {
+        border-color: #343a40;
+    }
+    .prestige-lys {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+}
