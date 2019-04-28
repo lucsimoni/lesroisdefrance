@@ -5,8 +5,8 @@ export interface Character {
     period: string,
     dateStart: number,
     dateEnd: number,
-    imageUrl: string
-    //Prestige
+    imageUrl: string,
+    prestige: number
     //dynastie
     //Surnom
     //Blason

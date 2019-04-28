@@ -6,7 +6,12 @@
         {{character.title}}<br>
         <small>dit le {{character.nickname}}</small>
       </h5>
-      <i class="fa fa-address-book"></i>
+      <div class="character-card-prestige">
+        <span *ngFor="let etoie of etoiles">
+          <i class="fa fa-star"></i>
+        </span>
+        <div class="prestige-tooltip">Prestige</div>
+      </div>
       <p class="character-card-date">
         Règne de {{character.dateStart | date : "y"}} à {{character.dateEnd | date : "y"}}
       </p>

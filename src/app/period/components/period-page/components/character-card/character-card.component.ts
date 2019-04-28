@@ -9,10 +9,12 @@ import { Character } from 'src/app/core/models/character.model';
 export class CharacterCardComponent implements OnInit {
 
   @Input() character: Character;
+  etoiles:Array<number>;
 
   constructor() { }
 
   ngOnInit() {
+    this.etoiles = Array(this.character.prestige).fill(1);
   }
 
 }

@@ -1,7 +1,25 @@
 a.character-card {
+    position: relative;
     text-decoration: none;
     color: #343a40;
     &:hover .card {
         border-color: #343a40;
+    }
+    .character-card-prestige {
+        color: gold;
+        position: absolute;
+        top: 0;
+        right: 5px;
+        .prestige-tooltip {
+            display: none;
+        }
+        &:hover .prestige-tooltip {
+            display: block;
+            position: absolute;
+            color: white;
+            background: #343a40;
+            padding: 3px;
+            border-radius: 3px;
+        }
     }
 }
