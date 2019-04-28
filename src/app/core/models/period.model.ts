@@ -4,4 +4,5 @@ export interface Period {
     dateStart: number,
     dateEnd: number,
     imageUrl: string
+    //description
 }

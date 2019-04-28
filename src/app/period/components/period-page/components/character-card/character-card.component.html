@@ -1,14 +1,12 @@
 <a routerLink="#" class="character-card">
   <div class="card mb-2">
-    <div class="prestige-lys">
-      OK
-    </div>
     <img class="card-img-top" src="{{character.imageUrl}}" alt="Card image cap">
     <div class="card-body">
       <h5 class="character-card-title">
         {{character.title}}<br>
         <small>dit le {{character.nickname}}</small>
       </h5>
+      <i class="fa fa-address-book"></i>
       <p class="character-card-date">
         Règne de {{character.dateStart | date : "y"}} à {{character.dateEnd | date : "y"}}
       </p>
