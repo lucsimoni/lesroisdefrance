@@ -2,11 +2,12 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { CharacterRoutingModule } from './character-routing.module';
-// import { PeriodPageComponent } from './components/period-page/period-page.component';
-// import { CharacterCardComponent } from './components/period-page/components/character-card/character-card.component';
+import { CharacterPageComponent } from './components/character-page/character-page.component';
 
 @NgModule({
-  declarations: [],
+  declarations: [
+    CharacterPageComponent
+  ],
   imports: [
     CommonModule,
     CharacterRoutingModule

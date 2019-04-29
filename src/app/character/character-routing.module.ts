@@ -1,11 +1,11 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-// import { PeriodPageComponent } from './components/period-page/period-page.component';
+import { CharacterPageComponent } from './components/character-page/character-page.component';
 // import { PeriodGuard } from '../core/guards/period.guard';
 
 const routes: Routes = [
-//   { path: ':id', component: PeriodPageComponent, canActivate: [PeriodGuard]},
-//   { path: '**', redirectTo: '/page-introuvable'},
+  { path: '', component: CharacterPageComponent/*, canActivate: [PeriodGuard]*/},
+  { path: '**', redirectTo: '/page-introuvable'},
 ];
 
 @NgModule({
