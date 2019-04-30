@@ -1,3 +1,23 @@
-<div class="character-page">
-  <h1>{{character.title}}</h1>
+<div class="container-fluid character-page">
+  <div class="row">
+    <div class="col-3" role="portrait">
+      <img src="{{character.imageUrl}}" alt="{{character.title}}">
+    </div>
+    <div class="col-3" role="identite">
+      <h2>{{character.title}}</h2>
+      <h4>dit le {{character.nickname}}</h4>
+      <p>Régna de <strong>{{character.dateStart | date : "y"}}</strong> à l'an <strong>{{character.dateEnd | date : "y"}}</strong> ap. J-C.</p>
+      <p>Successeur de <strong><u>{{character.predecessor}}</u></strong></p>
+    </div>
+    <div class="col-3" role="heritage">
+      <p>Né en <strong></strong></p>
+      <p>Mort en <strong></strong></p>
+      <p>Dynastie des <strong></strong></p>
+      <p>Fils de et de</p>
+    </div>
+    <div class="col-3" role="blason">
+      <h5>Blason</h5>
+      <img src="assets/images/blasons/blason_default.png" width="120px" height="120px">
+    </div>
+  </div>
 </div>
