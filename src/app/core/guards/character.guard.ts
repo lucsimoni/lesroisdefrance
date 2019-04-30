@@ -19,8 +19,12 @@ export class CharacterGuard implements CanActivate {
       //Check si l'id existe
       var characterFound:boolean = this.characterService.exists(characterId);
 
-      console.log("exist ?",characterFound);
-
-    return true;
+      //On redirige si le paramètre saisi ne correspond pas
+      if(!characterFound) {
+        this.router.navigate(['page-introuvable']);
+        return false;
+      } else {
+        return true;
+      }
   }
 }
