@@ -12,6 +12,10 @@ export class CharacterService {
   //On copie la source pour ne pas perdre d'informations
   private characters: Array<Character> = [...CHARACTERS];
 
+  getAll(): Character[] {
+    return [...this.characters];
+  }
+
   getOne(id:string): Character {
     return {...this.characters.find((v) => v.id === id)};
   }
@@ -24,6 +28,16 @@ export class CharacterService {
       }
     });
     return results;
+  }
+
+  exists(characterId:string):boolean {
+    var characterFound:boolean = false;
+    this.getAll().forEach(element => {
+      if(characterId === element.id) {
+        characterFound = true;
+      }
+    });
+    return characterFound;
   }
 
 }
