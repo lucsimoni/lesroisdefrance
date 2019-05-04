@@ -3,10 +3,20 @@
 <input type="text" name="title" id="title" #title="ngModel" ngModel> -->
 
 <div class="container search-page mt-5 mb-5">
-  <div class="search-input text-center">
-      <input (keyup)="onKey($event)" placeholder="Entrer le nom d'un Roi">
-  </div>
+
+  <!-- Obligé d'utiliser la balise form pour stopper la validation du navigateur -->
+  <form novalidate>
+    <div class="search-input">      
+        <input (keyup)="onKey($event)" required>
+        <div class="icon"></div>
+        <span class="bar"></span>
+        <label>Entrer le nom d'un Roi</label>
+    </div>
+  </form>
+
   <div class="search-results">
       <p>{{values}}</p>
   </div>
 </div>
+
+
