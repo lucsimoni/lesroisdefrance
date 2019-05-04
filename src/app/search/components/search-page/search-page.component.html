@@ -7,7 +7,7 @@
   <!-- Obligé d'utiliser la balise form pour stopper la validation du navigateur -->
   <form novalidate>
     <div class="search-input">      
-        <input (keyup)="onKey($event)" required>
+        <input (keyup)="search($event)" required>
         <div class="search-icon"><i class="fa fa-2x fa-search"></i></div>
         <span class="search-bar"></span>
         <label>Entrer le nom d'un Roi</label>
@@ -15,7 +15,9 @@
   </form>
 
   <div class="search-results">
-      <p>{{values}}</p>
+      <div *ngFor="let character of searchResults">
+          <h4>{{character.title}}</h4>
+      </div>
   </div>
 </div>
 
