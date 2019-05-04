@@ -1,0 +1,9 @@
+<a routerLink="/periode/{{period.id}}" class="period-card">
+  <div class="card mb-2">
+    <img class="card-img-top" src="{{period.imageUrl}}" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="period-card-title">{{period.title}}</h5>
+      <p class="period-card-date">{{period.dateStart | date : "y"}} - {{period.dateEnd | date : "y"}}</p>
+    </div>
+  </div>
+</a>
