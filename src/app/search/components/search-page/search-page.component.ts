@@ -12,4 +12,9 @@ export class SearchPageComponent implements OnInit {
   ngOnInit() {
   }
 
+  values = '';
+
+  onKey(event: any) {
+    this.values = event.target.value;
+  }
 }

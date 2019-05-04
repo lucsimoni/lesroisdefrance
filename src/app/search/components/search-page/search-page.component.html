@@ -1,3 +1,12 @@
-<p>
-  search-page works!
-</p>
+<!-- <input [(ngModel)]="prenom"> -->
+<!-- <label for="title">Title</label>
+<input type="text" name="title" id="title" #title="ngModel" ngModel> -->
+
+<div class="container search-page mt-5 mb-5">
+  <div class="search-input text-center">
+      <input (keyup)="onKey($event)" placeholder="Entrer le nom d'un Roi">
+  </div>
+  <div class="search-results">
+      <p>{{values}}</p>
+  </div>
+</div>
