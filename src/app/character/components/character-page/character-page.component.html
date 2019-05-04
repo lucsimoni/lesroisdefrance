@@ -10,14 +10,14 @@
       <p>Successeur de <strong><u>{{character.predecessor}}</u></strong></p>
     </div>
     <div class="col-3" role="heritage">
-      <p>Né en <strong></strong></p>
-      <p>Mort en <strong></strong></p>
-      <p>Dynastie des <strong></strong></p>
-      <p>Fils de et de</p>
+      <p>Né en <strong>{{character.dateBorn | date : "y"}}</strong></p>
+      <p>Mort en <strong>{{character.dateBorn | date : "y"}}</strong></p>
+      <p>Dynastie des {{character.dynasty}}<strong></strong></p>
+      <p>Fils de {{character.father}} et de {{character.mother}}</p>
     </div>
     <div class="col-3" role="blason">
       <h5>Blason</h5>
-      <img src="assets/images/blasons/blason_default.png" width="120px" height="120px">
+      <img src="assets/images/blasons/blason_default.png">
     </div>
   </div>
 </div>

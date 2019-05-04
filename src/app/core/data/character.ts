@@ -11,7 +11,10 @@ export const CHARACTERS: Character[] = [{
     prestige: 4,
     predecessor: "prédecesseur",
     dateBorn: new Date().setFullYear(100),
-    dateDeath: new Date().setFullYear(200)
+    dateDeath: new Date().setFullYear(200),
+    dynasty :"Mérovingiens",
+    father: "Dad",
+    mother: "Mom",
   }, {
     id:"pepin-le-bref",
     title: 'Pépin le Bref',
@@ -23,7 +26,10 @@ export const CHARACTERS: Character[] = [{
     prestige: 3,
     predecessor: "prédecesseur",
     dateBorn: new Date().setFullYear(100),
-    dateDeath: new Date().setFullYear(200)
+    dateDeath: new Date().setFullYear(200),
+    dynasty :"Mérovingiens",
+    father: "Dad",
+    mother: "Mom",
   }, {
     id:"charlemagne",
     title: 'Charlemagne',
@@ -35,7 +41,10 @@ export const CHARACTERS: Character[] = [{
     prestige: 5,
     predecessor: "prédecesseur",
     dateBorn: new Date().setFullYear(100),
-    dateDeath: new Date().setFullYear(200)
+    dateDeath: new Date().setFullYear(200),
+    dynasty :"Carolingiens",
+    father: "Dad",
+    mother: "Mom",
    }, {
     id:"louis-ix",
     title: 'Louis IX',
@@ -47,5 +56,8 @@ export const CHARACTERS: Character[] = [{
     prestige: 4,
     predecessor: "prédecesseur",
     dateBorn: new Date().setFullYear(100),
-    dateDeath: new Date().setFullYear(200)
+    dateDeath: new Date().setFullYear(200),
+    dynasty :"Capétiens",
+    father: "Dad",
+    mother: "Mom",
   }];
