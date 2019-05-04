@@ -3,9 +3,10 @@ import { CommonModule } from '@angular/common';
 import { TopBarComponent } from './UI/top-bar/top-bar.component';
 import { FooterBarComponent } from './UI/footer-bar/footer-bar.component';
 import { RouterModule } from '@angular/router';
+import { PreviousPageComponent } from './UI/previous-page/previous-page.component';
 
 @NgModule({
-  declarations: [TopBarComponent, FooterBarComponent],
+  declarations: [TopBarComponent, FooterBarComponent, PreviousPageComponent],
   imports: [
     CommonModule,
     RouterModule
