@@ -11,15 +11,13 @@ import { AppComponent } from './app.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
-import { PeriodCardComponent } from './home/components/period-card/period-card.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NotFoundComponent,
     HomeComponent,
-    AboutComponent,
-    PeriodCardComponent
+    AboutComponent
   ],
   imports: [
     BrowserModule,
