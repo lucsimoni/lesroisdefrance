@@ -1,3 +1,31 @@
 <footer class="bg-dark text-center">
-    © 2019 copyright lesroisdefrance.fr
+    <!-- Footer page d'accueil -->
+    <div *ngIf="router.url === '/'">
+        © 2019 copyright lesroisdefrance.fr
+    </div>
+    <!-- Footer recherche - sur toutes les pages sauf l'accueil -->
+    <div *ngIf="router.url !== '/'">
+        <div class="footer-search small mb-3">
+            <i class="fa fa-search"></i> 
+            Rechercher par
+        </div>
+        <div class="row">
+            <div class="col-3">
+                <i class="fa fa-lg fa-pencil"></i>
+                <div class="search-name small" role="search-type">Nom</div>
+            </div>
+            <div class="col-3">
+                <i class="fa fa-lg fa-calendar"></i>
+                <div class="search-name small" role="search-type">Date</div>
+            </div>
+            <div class="col-3">
+                <i class="fa fa-lg fa-hourglass-half"></i>
+                <div class="search-name small" role="search-type">Période</div>
+            </div>
+            <div class="col-3">
+                <i class="fa fa-lg fa-fort-awesome"></i>
+                <div class="search-name small" role="search-type">Dynastie</div>
+            </div>
+        </div>
+    </div>
 </footer>
