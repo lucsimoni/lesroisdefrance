@@ -1,8 +1,46 @@
-Presentation comme M2TW avec liste droite et présentation gauche
-<div class="home-main-container pt-3">
+<div class="home-main-container pt-3 text-center">
+  <h1>Recherchez</h1>
+  <h2>par</h2>
   <div class="container">
     <div class="row">
-        <a routerLink="/periode">Recherche par période</a>
+        <div class="search-mode col-6">
+          <a routerLink="/periode">
+              <i class="fa fa-3x fa-lg fa-pencil"></i>
+              <br>
+              Nom
+          </a>
+        </div>
+        <div class="search-mode col-6">
+            <a routerLink="/periode">
+              <i class="fa fa-3x fa-lg fa-calendar"></i>
+              <br>
+              Date
+            </a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-6">
+            <div class="separation" role="separator"></div>
+        </div>
+        <div class="col-6">
+            <div class="separation" role="separator"></div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="search-mode col-6">
+            <a routerLink="/periode">
+              <i class="fa fa-3x fa-lg fa-hourglass-half"></i>
+              <br>
+              Période
+            </a>
+        </div>
+        <div class="search-mode col-6">
+            <a routerLink="/periode">
+              <i class="fa fa-3x fa-lg fa-fort-awesome"></i>
+              <br>
+              Dynastie
+            </a>
+        </div>
     </div>
   </div>
 </div>

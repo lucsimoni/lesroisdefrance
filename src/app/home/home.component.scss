@@ -1,0 +1,13 @@
+.home-main-container {
+    .row {
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+        .search-mode:first-child {
+            border-right: 2px solid grey;
+        }
+    }
+    .separation {
+        height: 2px;
+        background: grey;
+    }
+}
