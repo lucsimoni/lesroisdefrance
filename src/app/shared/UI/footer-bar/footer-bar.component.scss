@@ -4,5 +4,12 @@ footer {
     left: 0;
     right: 0;
     color: #909d96;
-    padding: 1rem;
+    padding-bottom: 3px;
+    .col-3 {
+        padding-left: 0;
+        padding-right: 0;
+        &:hover {
+            color: white;
+        }
+    }
 }
