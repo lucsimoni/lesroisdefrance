@@ -8,15 +8,19 @@ import { Options } from 'ng5-slider';
 })
 export class DatePageComponent implements OnInit {
 
-  value: number = 100;
+  value: number = 476;
   options: Options = {
-    floor: 0,
-    ceil: 200
+    floor: 476,
+    ceil: 1870
   };
 
   constructor() { }
 
   ngOnInit() {
+  }
+
+  valueChange() {
+    console.log("changement de valeur");
   }
 
 }

@@ -1,4 +1,4 @@
-<p>
-  date-page works!
-</p>
-<ng5-slider [(value)]="value" [options]="options"></ng5-slider>
+<div class="container date-page text-center mt-5 mb-5">
+  <h1>Séléctionner une date</h1>
+  <ng5-slider [(value)]="value" [options]="options" (valueChange)="valueChange()"></ng5-slider>
+</div>
