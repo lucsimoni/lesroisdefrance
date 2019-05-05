@@ -14,9 +14,9 @@
     </div>
   </form>
 
-  <div class="search-results">
-      <div *ngFor="let character of searchResults">
-          <h4>{{character.title}}</h4>
+  <div class="search-results row mt-3">
+      <div class="col-lg-2 col-md-4 col-6" *ngFor="let character of searchResults">
+        <app-character-card [character]="character" ></app-character-card>
       </div>
   </div>
 </div>
