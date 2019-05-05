@@ -8,9 +8,10 @@ const routes: Routes = [
   { path: '', component: HomeComponent},
   { path: 'a-propos', component: AboutComponent},
   { path: 'page-introuvable', component: NotFoundComponent},
-  //On ne déclare pas les modules périod & character, il sont déclarés dans le loadchildren
+  //On ne déclare pas les modules suivants, il sont déclarés dans le loadchildren
   { path: 'periode', loadChildren: './period/period.module#PeriodModule'},
   { path: 'recherche', loadChildren: './search/search.module#SearchModule'},
+  { path: 'date', loadChildren: './date/date.module#DateModule'},
   { path: 'personnage', loadChildren: './character/character.module#CharacterModule'},
   { path: '**', redirectTo: '/page-introuvable'},
 ];
