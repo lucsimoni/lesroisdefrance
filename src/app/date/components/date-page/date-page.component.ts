@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Options } from 'ng5-slider';
+import { Character } from 'src/app/core/models/character.model';
+import { CharacterService } from 'src/app/core/services/character/character.service';
 
 @Component({
   selector: 'app-date-page',
@@ -8,19 +10,31 @@ import { Options } from 'ng5-slider';
 })
 export class DatePageComponent implements OnInit {
 
+  // Valeur initiale
   value: number = 476;
+  characters : Character [] = [];
+  dateResults : Character [] = [];
   options: Options = {
     floor: 476,
     ceil: 1870
   };
 
-  constructor() { }
+  constructor(private characterService : CharacterService) {
+    this.characters = characterService.getAll();
+  }
 
   ngOnInit() {
   }
 
   valueChange() {
-    console.log("changement de valeur");
+    this.dateResults = [];
+    this.characters.forEach(character => {
+      let dateStart = new Date(character.dateStart).getFullYear();
+      let dateEnd = new Date(character.dateEnd).getFullYear();
+      if(dateStart <= this.value && this.value <= dateEnd) {
+        this.dateResults.push(character);
+      }
+    });
   }
 
 }
