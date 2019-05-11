@@ -24,17 +24,11 @@ export class DatePageComponent implements OnInit {
   }
 
   ngOnInit() {
+    this.dateResults = this.characterService.getCharactersFromDate(this.value);
   }
 
   valueChange() {
-    this.dateResults = [];
-    this.characters.forEach(character => {
-      let dateStart = new Date(character.dateStart).getFullYear();
-      let dateEnd = new Date(character.dateEnd).getFullYear();
-      if(dateStart <= this.value && this.value <= dateEnd) {
-        this.dateResults.push(character);
-      }
-    });
+    this.dateResults = this.characterService.getCharactersFromDate(this.value);
   }
 
 }

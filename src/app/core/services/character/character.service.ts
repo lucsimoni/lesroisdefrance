@@ -30,6 +30,18 @@ export class CharacterService {
     return results;
   }
 
+  getCharactersFromDate(year:number) {
+    let results = [];
+    this.characters.forEach(character => {
+      let dateStart = new Date(character.dateStart).getFullYear();
+      let dateEnd = new Date(character.dateEnd).getFullYear();
+      if(dateStart <= year && year <= dateEnd) {
+        results.push(character);
+      }
+    });
+    return results;
+  }
+
   exists(characterId:string):boolean {
     var characterFound:boolean = false;
     this.getAll().forEach(element => {
