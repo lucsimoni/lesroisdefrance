@@ -1,9 +1,15 @@
+@import 'variables.scss';
+
 /*Global*/
+html, body {
+    height : 100%
+}
+
 body {
     // background: url("assets/images/background.gif");
     // background-attachment: fixed;
     // background-position: center;
     // background-repeat: no-repeat;
     // background-size: cover;
-    // background: linear-gradient(#000e4c, #0027C6, #000e4c);
+    // background: radial-gradient($blue-1, $blue-2);
 }

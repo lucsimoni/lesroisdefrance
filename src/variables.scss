@@ -1,4 +1,34 @@
 /*Variables*/
-
+$black-1 : #212529;
+$white-1 : #eeeeee;
+$blue-1 : #0027C6;
+$blue-2 : #000e4c;
+$grey-1 : #bbbbbb;
 
 /*Fonts*/
+
+
+/*Titres*/
+h1 { font-size: 2rem; text-transform: uppercase; }
+h2 { font-size: 1.5rem; text-transform: uppercase; }
+
+
+/*Liens*/
+a {
+    color: $black-1;
+    &:hover, &:focus, &:active {
+        text-decoration: none;
+        color: $black-1;
+    }
+}
+
+
+/*Boutons*/
+// .btn-1 {
+//     background-color: rgba(255, 255, 255, 0.2);
+//     border-radius: 0;
+//     color: $grey-1;
+//     &::after {
+//         content:url("./src/app/assets/images/icons/lys.png") ;
+//     }
+// }
