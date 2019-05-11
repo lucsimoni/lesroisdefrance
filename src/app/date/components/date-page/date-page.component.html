@@ -1,7 +1,10 @@
 <div class="container date-page text-center mt-5 mb-5">
   <h1>Séléctionner une date</h1>
   <ng5-slider [(value)]="value" [options]="options" (valueChange)="valueChange()"></ng5-slider>
-  <div *ngFor="let character of dateResults">
-    {{character.title}}
+  
+  <div class="date-results row mt-3">
+    <div class="col-lg-2 col-md-4 col-6" *ngFor="let character of dateResults">
+      <app-character-card [character]="character" ></app-character-card>
+    </div>
   </div>
 </div>

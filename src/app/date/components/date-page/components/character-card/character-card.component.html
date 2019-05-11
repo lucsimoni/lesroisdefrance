@@ -1,0 +1,20 @@
+<a routerLink="/personnage/{{character.id}}" class="character-card">
+  <div class="card mb-2">
+    <img class="card-img-top" src="{{character.imageUrl}}" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="character-card-title">
+        {{character.title}}<br>
+        <small>dit le {{character.nickname}}</small>
+      </h5>
+      <div class="character-card-prestige">
+        <span *ngFor="let etoie of etoiles">
+          <i class="fa fa-star"></i>
+        </span>
+        <div class="prestige-tooltip">Prestige</div>
+      </div>
+      <p class="character-card-date">
+        Règne de {{character.dateStart | date : "y"}} à {{character.dateEnd | date : "y"}}
+      </p>
+    </div>
+  </div>
+</a>
