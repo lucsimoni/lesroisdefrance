@@ -25,6 +25,7 @@ export interface Character {
     //france debut reigne fin regne sur 6 droit
     //Histoire sur 6 gauche
     //Bouton retour en bas à gauche
+    // devise des rois de Fr
 
     //page accueil
     //4 recherches + afficher tous les rois

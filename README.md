@@ -5,6 +5,12 @@
 > **Description** : Angular 7 app which presents the different kings of France <br>
 > **Git Repository** : https://github.com/lucsimoni/lucsimoni.git <br>
 
+
+---
+
+En cas d'erreur au lancement avec Node Sass<br>
+npm rebuild node-sass
+
 ---
 
 IMG Project
